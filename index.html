@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Arun 🤍</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffe6ec, #ffd6e0);
+    text-align: center;
+    color: #4a1f2d;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #7a1f3d;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #8c3f58;
+}
+
+.letter {
+    font-size: 18px;
+    line-height: 1.8;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.slideshow img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+button {
+    background: #7a1f3d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a8325a;
+}
+
+#proposal {
+    display: none;
+    font-size: 22px;
+    margin-top: 30px;
+    color: #7a1f3d;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="voiceMessage">
+  <source src="voice.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>My Arun 🤍</h1>
+<div class="subtitle">Since June 2017… Forever</div>
+
+<div class="letter">
+    Since June 2017, you have been my home.  
+    In your arms, I found comfort.  
+    In your words, I found strength.  
+    In your love, I found peace.  
+    <br><br>
+    Life with you is not loud or dramatic.  
+    It is soft. It is safe. It is real.  
+    <br><br>
+    Every day, I silently thank life for giving me you.
+</div>
+
+<div class="slideshow">
+    <img src="photo1.JPG">
+    <img src="photo2.JPG">
+    <img src="photo3.JPG">
+</div>
+
+<br>
+
+<button onclick="startMoment()">Start Our Moment 🤍</button>
+
+<div id="proposal">
+    Arun…  
+    I choose you.  
+    Today. Tomorrow. Always.  
+    <br><br>
+    Will you continue forever with me? 🤍
+</div>
+
+</div>
+
+<script>
+function startMoment() {
+    document.getElementById("bgMusic").play();
+    setTimeout(function() {
+        document.getElementById("voiceMessage").play();
+    }, 6000);
+    document.getElementById("proposal").style.display = "block";
+}
+</script>
+
+</body>
+</html>
